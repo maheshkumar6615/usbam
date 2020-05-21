@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="USBAM Contact"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <fixedcolums
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                <items jcr:primaryType="nt:unstructured">
+                    <contact
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Intranet Contact"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <name
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Name of Contact"
+                                fieldLabel="Contact's Name"
+                                name="./name"
+                                validation="name.validation"/>
+                            <department
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Department of Contact"
+                                fieldLabel="Contact's Department"
+                                name="./department"
+                                validation="department.validation"/>
+                            <phone
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Phone Number of Contact"
+                                fieldLabel="Contact's Phone Number"
+                                name="./phone"
+                                validation="phone.validation"/>
+                            <extension
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Phone Number Extension of Contact"
+                                fieldLabel="Contact's Phone Number Extension"
+                                name="./extension"/>
+                            <email
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Email of Contact"
+                                fieldLabel="Contact's Email"
+                                name="./email"
+                                validation="email.validation"/>
+                        </items>
+                    </contact>
+                </items>
+            </fixedcolums>
+        </items>
+    </content>
+</jcr:root>

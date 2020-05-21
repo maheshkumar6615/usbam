@@ -1,0 +1,12 @@
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html">
+	<div class="contact-info">
+		<sly data-sly-test="${properties.name}">
+			<b>Contact</b><br/>
+			${properties.name}, ${properties.department}<br/>
+       		<a href="tel:${properties.phone}" class="phone">${properties.phone}</a><br/>
+       		<sly data-sly-test="${properties.extension}">Ext: ${properties.extension}<br/></sly>
+			<a href="mailto:${properties.email}" title="Send email to ${properties.email}">${properties.email}</a>
+       	</sly>
+	</div>
+</sly>
+<sly data-sly-call="${templates.placeholder @ isEmpty = !properties.name}"></sly>

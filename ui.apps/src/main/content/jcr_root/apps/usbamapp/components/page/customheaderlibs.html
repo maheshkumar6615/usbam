@@ -1,0 +1,30 @@
+<!--<meta
+  property="cq:datatype"
+  data-sly-test="${wcmmode.edit || wcmmode.preview}"
+  content="JSON"
+/>
+<meta property="cq:wcmmode" data-sly-test="${wcmmode.edit}" content="edit" />
+<meta
+  property="cq:wcmmode"
+  data-sly-test="${wcmmode.preview}"
+  content="preview"
+/>
+<meta
+  property="cq:pagemodel_root_url"
+  data-sly-use.page="com.adobe.aem.spa.project.core.models.Page"
+  content="${page.hierarchyRootJsonExportUrl}"
+/>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+  <sly
+    data-sly-call="${clientlib.css @ categories='usbamapp-react'}"
+  ></sly>
+</sly>-->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--/*
+    Custom Headerlibs for WKND Site
+*/-->
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.css @ categories='usbam.base'}"/>
+
+<sly data-sly-include="web-fonts.html"></sly>
+
